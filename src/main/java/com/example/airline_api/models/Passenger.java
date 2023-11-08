@@ -26,7 +26,7 @@ public class Passenger {
     @JoinTable( //define the details of the join table that will be used to manage the many-to-many relationship.
             name = "passengers_flights", //Specifies the name of the join table as "passengers_flights.
             joinColumns = @JoinColumn(name = "passenger_id"),
-            inverseJoinColumns = @JoinColumn(name = "flight")
+            inverseJoinColumns = @JoinColumn(name = "flight_id")
     )
     @JsonIgnoreProperties({"passengers"})
     //This is used to ignore the "passengers" properties when serializing to JSOn to prevent recursion

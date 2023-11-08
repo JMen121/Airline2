@@ -1,6 +1,8 @@
 package com.example.airline_api.controllers;
 
 import com.example.airline_api.models.Passenger;
+import com.example.airline_api.repositories.PassengerRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,9 +25,12 @@ public class PassengerController {
     }
 
     // Add a new passenger
-    @PostMapping
+  /*  @PostMapping
     public ResponseEntity<Passenger> addNewPassenger(){
-        return null;
-    }
+        return passengerRepository.save;
+    }*/
+
+//Add a new passenger
+
 
 }
