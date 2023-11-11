@@ -89,4 +89,8 @@ public class Flight {
     public void setPassengers(List<Passenger> passengers) {
         this.passengers = passengers;
     }
+
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
 }

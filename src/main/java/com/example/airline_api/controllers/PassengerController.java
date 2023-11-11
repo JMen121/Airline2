@@ -32,7 +32,7 @@ public class PassengerController {
 
     // Display specific passenger details
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Optional<Passenger>> getPassengerById(@PathVariable Long Id){
+    public ResponseEntity<Optional<Passenger>> findPassengerById(@PathVariable Long Id){
        return new ResponseEntity<>(passengerRepository.findById(Id.longValue()), HttpStatus.OK) ;
     }
 
